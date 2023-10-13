@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,300&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar CSS  */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: black;
+    color: white;
+    padding: 19px 12px;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    padding: 0px 13px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+ul>li>a:hover {
+    color: rgb(192, 189, 205);
+}
+
+.logo img {
+    width: 15px;
+    filter: invert(1);
+}
+
+/* Main Section CSS  */
+main {
+    min-height: 89vh;
+}
+
+.container {
+    max-width: 80vw;
+    margin: auto;
+    padding: 9px 15px;
+}
+
+.container h1 {
+    padding: 12px 0px;
+}
+
+input[type='text'] {
+    min-width: 23vw;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 3px 12px;
+}
+
+.btn {
+    background: black;
+    color: white;
+    padding: 9px 12px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: none;
+    color: black;
+    font-weight: bold;
+    border: none;
+}
+
+#resultCont div::first-letter {
+    text-transform: uppercase;
+}
+
+/* Footer CSS  */
+footer{
+    background: black;
+    color: white;
+    font-size: 12px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

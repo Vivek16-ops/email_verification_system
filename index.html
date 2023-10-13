@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EValidate - Email Validater System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/email.svg" alt="email.svg"><span>EValidate</span>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Enter Your Email To Validate</h1>
+            <form action="/submit" method="post">
+                <!-- Input Feild For Getitng An Email Address -->
+                <input type="text" name="username" id="username" placeholder="Enter Your Email To Validate" required>
+                <br><br>
+                <!-- Submit Button  -->
+                <input type="submit" value="Submit" class="btn" id="submitBtn">
+            </form>
+        </div>
+
+        <div class="container">
+            <h2>Your Result</h2>
+            <div id="resultCont">
+                Your Result Show Here:
+            </div>
+        </div>
+    </main>
+    <footer>
+        Copyright | EValidate.com | All Rights reserved
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
